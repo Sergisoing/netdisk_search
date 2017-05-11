@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="search">
+    <view class="input-block">
+      <input bindinput="searchInput" type="text" value="{{searchValue}}" class="search_input" />
+    </view>
+    <view class="button-block">
+      <button type="primary" catchtap="search" class="search_button">搜索</button>
+    </view>
+  </view>
+</view>
+<view class="history-block">
+  <text class="history-text">最近搜索</text>
+  <view class="history">
+    <view wx:for="{{history}}" data-item="{{item}}" catchtap="research" class="history-item">
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>
+<include src="../common/loading.wxml"/>

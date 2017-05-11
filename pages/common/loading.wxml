@@ -1,0 +1,1 @@
+<view id="mask" wx:if="{{loading}}"></view>

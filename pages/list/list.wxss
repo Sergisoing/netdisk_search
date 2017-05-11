@@ -1,0 +1,5 @@
+.result-title {
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+
